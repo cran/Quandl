@@ -1,2 +1,5 @@
-export(Quandlr)
+export(Quandl.auth)
 export(Quandl)
+importFrom(RJSONIO,fromJSON)
+importFrom(xts,xts)
+importFrom(zoo,zoo)
