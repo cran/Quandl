@@ -1,5 +1,8 @@
 export(Quandl.auth)
+export(Quandl.push)
+export(Quandl.search)
 export(Quandl)
+importFrom(RCurl,postForm)
 importFrom(RJSONIO,fromJSON)
 importFrom(xts,xts)
 importFrom(zoo,zoo)
