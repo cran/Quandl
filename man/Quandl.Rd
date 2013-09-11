@@ -4,13 +4,14 @@
 \usage{
   Quandl(code, type = c("raw", "ts", "zoo", "xts"),
     start_date, end_date,
-    transformation = c("", "diff", "rdiff", "normalize", "cumul"),
+    transformation = c("", "diff", "rdiff", "normalize", "cumul", "rdiff_from"),
     collapse = c("", "weekly", "monthly", "quarterly", "annual"),
-    rows, meta = FALSE, authcode = Quandl.auth())
+    rows, sort = c("desc", "asc"), meta = FALSE,
+    authcode = Quandl.auth())
 }
 \arguments{
-  \item{code}{Dataset code on Quandl specified as a
-  string.}
+  \item{code}{Dataset code on Quandl specified as a string
+  or an array of strings.}
 
   \item{type}{Type of data returned specified as string.
   Can be 'raw', 'ts', 'zoo' or 'xts'.}
@@ -27,6 +28,9 @@
   \item{collapse}{Collapse frequency of Data.}
 
   \item{rows}{Select number of dates returned.}
+
+  \item{sort}{Select if data is given to R in ascending or
+  descending formats. Helpful for the rows parameter.}
 
   \item{meta}{Returns meta data in list format as well as
   data.}

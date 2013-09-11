@@ -1,10 +1,12 @@
-8d968b7a7451dd5f0746731ab19ca32d *DESCRIPTION
-b225619b9dccf64d8c0ca990b9627670 *NAMESPACE
-0429fd31e8236662855517e1f356c814 *R/Quandl.R
+fc574c2bd0c01c6d4c73435ee15815f2 *ChangeLog
+709226bd43dc03ad24f5827de1cecbdc *DESCRIPTION
+5af44f58fd6d165e7ef606c40ada5475 *NAMESPACE
+f5f7440362359b11f04d68bdd96e7a6e *R/Quandl.R
 96ee2e5ff081673e8caef403fc681c9a *R/Quandlpush.R
 a2330995e798ddf61fbb924abd87efde *R/Quandlsearch.R
-09effe90d11ad956dc83107d100adfad *README.md
-f2660a982bd0ccb4a8dd381a7b9861cc *man/Quandl.Rd
+d67d6091d60e3c78a28ca478059efbdf *README.md
+16c3306516f105d9009e5a4a20a8fc9a *man/Quandl.Rd
 200487c32070f971fcc9efecd481c054 *man/Quandl.auth.Rd
+4f85a03b8de290508bf37b0f73a8bcbc *man/Quandl.limit.Rd
 1b07b4f51ac5e4b6a34a7b9a839e1377 *man/Quandl.push.Rd
 46ceda60ba1fc9ed1b6ab8a0a7742e66 *man/Quandl.search.Rd
