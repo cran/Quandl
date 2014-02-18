@@ -1,6 +1,6 @@
 Package: Quandl
 Title: Quandl Data Connection
-Version: 2.3.1
+Version: 2.3.2
 Date: 2014-02-18
 Author: Raymond McTaggart, Gergely Daroczi
 Maintainer: Raymond McTaggart <raymond@quandl.com>
@@ -11,7 +11,7 @@ Imports: RCurl, RJSONIO, zoo, xts
 Suggests: testthat
 License: MIT + file LICENSE
 Collate: 'Quandl.R' 'Quandlpush.R' 'Quandlsearch.R' 'Quandlapi.R'
-Packaged: 2014-04-07 21:19:22 UTC; Rayy
+Packaged: 2014-04-08 23:00:54 UTC; Rayy
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2014-04-08 22:50:50
+Date/Publication: 2014-04-09 08:01:55
