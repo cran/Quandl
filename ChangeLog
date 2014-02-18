@@ -1,15 +1,54 @@
 ##############################
+####Version 2.3.0 to 2.3.1####
+##############################
+
+- Test suite passes
+
+
+##############################
+####Version 2.2.2 to 2.3.0####
+##############################
+
+- First iteration of REST interface with Quandl api added
+- Quandl, Quandl.push, Quandl.search modified to use quandl.api
+
+
+##############################
+####Version 2.1.2 to 2.2.2####
+##############################
+
+- Single column selection for single datasets
+- First batch of tests added
+- Weekly time series bug fixed
+
+
+##############################
+####Version 2.1.2 to 2.2.1####
+##############################
+
+- Regular time series objects are returned for regular time series
+- Limit errors now caught
+
+##############################
+####Version 2.1.2 to 2.2.0####
+##############################
+
+- Changed 'AssignInNamespace' to 'AssignInMyNamespace'
+- Quandl.push functionality returned
+- Error Catching improved again
+
+##############################
 ####Version 2.1.1 to 2.1.2####
 ##############################
 
-- Removed calls to packages namespace using ':::' as inline with new CRAN policies.
+- Removed calls to packages namespace using ':::' as inline with new CRAN policies
 
 ##############################
 ####Version 2.1.0 to 2.1.1####
 ##############################
 
 - Added Quandl.limit function to check remaining API limit
-- Changed error catching to be a bit more robust.
+- Changed error catching to be a bit more robust
 
 ##############################
 #####Version 2.0 to 2.1.0#####
