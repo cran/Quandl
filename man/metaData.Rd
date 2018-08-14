@@ -23,4 +23,3 @@ metaData(ts)
 \seealso{
 \code{\link{Quandl}}, \code{\link{Quandl.search}}
 }
-

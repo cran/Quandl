@@ -29,7 +29,7 @@ with_mock(
       expect_equal(url, "https://www.quandl.com/api/v3/datatables/ZACKS/FE")
       expect_null(body)
       expect_equal(query, list('ticker[]'='AAPL', 'ticker[]'='MSFT',
-                               per_end_date.gt='2015-01-01',
+                               per_end_date.gt='2015-01-01', code='FOO',
                                'qopts.columns[]'='ticker', 'qopts.columns[]'='per_end_date',
                                'qopts.columns[]'='tot_revnu'))
     })
@@ -40,6 +40,7 @@ with_mock(
   },
   Quandl.datatable("ZACKS/FE", ticker=c('AAPL', 'MSFT'),
                                per_end_date.gt='2015-01-01',
+                               code='FOO',
                                qopts.columns=c('ticker','per_end_date','tot_revnu'),
                     paginate=FALSE)
 )
@@ -109,4 +110,18 @@ with_mock(
   })
 )
 
+context("Quandl.datatable() response new column types")
+with_mock(
+  `httr::VERB` = function(http, url, config, body, query) {
+    mock_response(content = mock_datatable_data_extra_columns())
+  },
+  `httr::content` = function(response, as="text") {
+    response$content
+  },
+  test_that("response data columns are converted to proper new data types", {
+    data <- Quandl.datatable('USTRE/AUCTHIST')
+    expect_is(data[,1], "numeric")
+    expect_is(data[,2], "POSIXct")
+  })
+)
 reset_config()

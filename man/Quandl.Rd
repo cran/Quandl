@@ -7,7 +7,8 @@
 Quandl(code, type = c("raw", "ts", "zoo", "xts", "timeSeries"),
   transform = c("", "diff", "rdiff", "normalize", "cumul", "rdiff_from"),
   collapse = c("", "daily", "weekly", "monthly", "quarterly", "annual"),
-  order = c("desc", "asc"), meta = FALSE, force_irregular = FALSE, ...)
+  order = c("desc", "asc"), meta = FALSE, force_irregular = FALSE,
+  ...)
 }
 \arguments{
 \item{code}{Dataset code on Quandl specified as a string or an array of strings.}
@@ -47,4 +48,3 @@ This R package uses the Quandl API. For more information go to \url{https://www.
 \seealso{
 \code{\link{Quandl.api_key}}
 }
-

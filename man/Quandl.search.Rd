@@ -34,4 +34,3 @@ search.results <- Quandl.search("oil")
 \seealso{
 \code{\link{Quandl.api_key}}
 }
-

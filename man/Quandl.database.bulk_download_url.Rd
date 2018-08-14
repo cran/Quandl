@@ -28,4 +28,3 @@ url = Quandl.database.download_url("NSE", download_type="partial")
 \seealso{
 \code{\link{Quandl.api_key}}
 }
-

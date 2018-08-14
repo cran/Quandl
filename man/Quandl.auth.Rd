@@ -23,4 +23,3 @@ Quandl.auth('foobar')
 \seealso{
 \code{\link{Quandl}}
 }
-

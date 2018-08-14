@@ -29,4 +29,3 @@ plot(quandldata[,1])
 \seealso{
 \code{\link{Quandl.api_key}}, \code{\link{Quandl}}
 }
-

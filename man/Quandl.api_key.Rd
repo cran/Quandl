@@ -20,4 +20,3 @@ Query or set Quandl API key
 Quandl.api_key('foobar')
 }
 }
-

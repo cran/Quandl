@@ -30,4 +30,3 @@ Quandl.database.bulk_download_to_file("NSE", "./NSE.zip")
 \seealso{
 \code{\link{Quandl.api_key}}
 }
-
